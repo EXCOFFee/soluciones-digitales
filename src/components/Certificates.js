@@ -35,6 +35,9 @@ import useScrollAnimation from '../hooks/useScrollAnimation';
 import Card, { CardHeader, CardTitle, CardContent } from './UI/Card';
 import Button from './UI/Button';
 
+// Importar imágenes
+import certificadoJsImg from '../assets/images/cert-js.png';
+
 /**
  * Configuración de animaciones para la sección Certificates
  * Centralizada para facilitar mantenimiento
@@ -130,35 +133,8 @@ const CERTIFICATES_DATA = {
         description: 'Curso integral de JavaScript moderno cubriendo desde fundamentos hasta conceptos avanzados.',
         verified: true,
         color: '#F7DF1E',
-        certificate_url: process.env.PUBLIC_URL + '/CertificadoJavaScript.png',
+        certificate_url: certificadoJsImg,
         hasImage: true
-      }
-    ]
-  },
-
-  ai: {
-    title: 'Inteligencia Artificial',
-    description: 'Certificaciones en IA y tecnologías emergentes',
-    icon: FaBrain,
-    color: 'text-purple-400',
-    bgColor: 'from-purple-500/10 to-purple-600/5',
-    certificates: [
-      {
-        id: 'davinci-ai',
-        title: 'Inteligencia Artificial',
-        subtitle: 'Curso de IA aplicada al desarrollo',
-        institution: 'Escuela Da Vinci',
-        institutionIcon: GiArtificialIntelligence,
-        date: '2024',
-        duration: '6 meses',
-        hours: 12,
-        grade: 'A+',
-        credentialId: 'DV-AI-2024-001',
-        skills: ['Machine Learning', 'Neural Networks', 'AI Tools', 'Prompt Engineering', 'AI Integration'],
-        description: 'Curso especializado en inteligencia artificial aplicada al desarrollo de software.',
-        verified: true,
-        color: '#8B5CF6',
-        certificate_url: '#'
       }
     ]
   },

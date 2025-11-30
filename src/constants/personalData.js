@@ -22,9 +22,9 @@
 export const personalData = {
   // Información básica
   name: 'Santiago Excofier',
-  title: 'Desarrollador Full-Stack',
-  subtitle: 'Especializado en JavaScript & IA',
-  bio: 'Graduado en Desarrollo Web y Software en Escuela Da Vinci (finalizado en diciembre 2025) con más de 3 años de experiencia en desarrollo web y software. Apasionado por la inteligencia artificial, desarrollo web y productividad.',
+  title: 'Desarrollador Full-Stack & Software',
+  subtitle: 'Especializado en Web, Apps Móviles & Software',
+  bio: 'Graduado en Desarrollo Web y Software en Escuela Da Vinci (finalizado en diciembre 2025) con más de 3 años de experiencia en desarrollo web, aplicaciones móviles y software en general. Apasionado por la inteligencia artificial, desarrollo multiplataforma y productividad.',
   
   // Ubicación y contacto
   location: 'Argentina',
@@ -53,10 +53,10 @@ export const personalData = {
   // Valores y principios
   workingStyle: 'Remoto/Presencial',
   methodology: 'Metodologías Ágiles',
-  focusAreas: ['Desarrollo Web', 'Desarrollo de Software', 'IA/Productividad', 'Desarrollo Full-Stack'],
+  focusAreas: ['Desarrollo Web', 'Apps Móviles', 'Desarrollo de Software', 'IA/Productividad', 'Desarrollo Full-Stack'],
   
   // Intereses
-  interests: ['Inteligencia Artificial', 'Desarrollo Web', 'Desarrollo de Software', 'Productividad', 'Nuevas Tecnologías'],
+  interests: ['Inteligencia Artificial', 'Desarrollo Web', 'Aplicaciones Móviles', 'Desarrollo de Software', 'Productividad', 'Nuevas Tecnologías'],
   
   // Idiomas
   languages: [
@@ -126,8 +126,8 @@ export const heroTexts = [
   'Desarrollador Full-Stack',
   'Especialista en JavaScript',
   'Entusiasta de la IA',
-  'Desarrollador Web',
-  'Estudiante de Desarrollo Web',
+  'Desarrollador Web & Móvil',
+  'Desarrollador de Software',
   'Innovador Tecnológico'
 ];
 

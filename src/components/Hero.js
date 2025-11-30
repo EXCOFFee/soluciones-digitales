@@ -105,10 +105,10 @@ const SOCIAL_ICON_ANIMATIONS = {
  * Configuración centralizada para fácil modificación
  */
 const TYPING_TEXTS = [
-  'Desarrollador Web Full Stack',
+  'Desarrollador Web, Móvil & Software',
   'Estudiante de Análisis de Sistemas',
   'Especialista en uso de herramientas de IA & Productividad',
-  'Programador Freelance'
+  'Desarrollo Full-Stack & Multiplataforma'
 ];
 
 /**

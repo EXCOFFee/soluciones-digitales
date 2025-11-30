@@ -1,8 +1,12 @@
 # CV Web Santiago Excofier
 
-## 🚀 Portfolio Personal Interactivo
+## 🚀 Portfolio Personal - Desarrollador Full-Stack & Software
 
-Portfolio web moderno y responsive desarrollado con React, Tailwind CSS y tecnologías web modernas. Presenta mis habilidades, experiencia y proyectos de forma interactiva y profesional.
+Portfolio web moderno y responsive desarrollado con React, Tailwind CSS y tecnologías web modernas. Presenta mis habilidades, experiencia y proyectos en **desarrollo web, aplicaciones móviles y software en general** de forma interactiva y profesional.
+
+## 🔗 Demo en Vivo
+
+**[Ver Portfolio](https://excoffee.github.io/cv-web-santiago/)**
 
 ## ✨ Características
 
@@ -12,6 +16,7 @@ Portfolio web moderno y responsive desarrollado con React, Tailwind CSS y tecnol
 - **🎯 Interactivo**: Animaciones con Framer Motion y efectos visuales
 - **🔗 Navegación Suave**: Single Page Application con navegación fluida
 - **📧 Información de Contacto**: Enlaces directos a email, WhatsApp y redes sociales
+- **💼 Especialidades**: Desarrollo Web, Apps Móviles y Software en general
 
 ## 🛠️ Tecnologías Utilizadas
 
@@ -85,9 +90,11 @@ Los archivos optimizados se generarán en la carpeta `build/`.
 
 ## 🌐 Deploy
 
-El proyecto está configurado para deploy en Hostinger y otros servicios de hosting estático.
+El proyecto está desplegado en **GitHub Pages** y también disponible para hosting en Hostinger u otros servicios.
 
-Para deployar:
+**URL del sitio**: [https://excoffee.github.io/cv-web-santiago/](https://excoffee.github.io/cv-web-santiago/)
+
+Para deployar manualmente:
 1. Ejecuta `npm run build`
 2. Sube el contenido de la carpeta `build/` a tu servidor
 

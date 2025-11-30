@@ -328,7 +328,7 @@ const Contact = () => {
       <div className="container mx-auto px-4">
         <SectionTitle
           title="Contacto"
-          subtitle="¿Tienes un proyecto en mente? ¡Hablemos! Estoy disponible para nuevas oportunidades y colaboraciones."
+          subtitle="¿Tienes un proyecto web, móvil o de software en mente? ¡Hablemos! Estoy disponible para nuevas oportunidades y colaboraciones."
         />
 
         {/* Información de disponibilidad */}

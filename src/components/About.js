@@ -29,6 +29,10 @@ import useScrollAnimation from '../hooks/useScrollAnimation';
 import { personalData } from '../constants/personalData';
 import Card, { CardHeader, CardTitle, CardContent, StatCard } from './UI/Card';
 
+// Importar imágenes
+import promedioImg from '../assets/images/promedio.png';
+import davinciImg from '../assets/images/davinci.jpg';
+
 /**
  * Configuración de animaciones para la sección About
  * Centralizada para facilitar mantenimiento
@@ -102,7 +106,7 @@ const ABOUT_ANIMATIONS = {
 const PERSONAL_STATS = [
   { 
     icon: () => (
-      <img src={process.env.PUBLIC_URL + "/davinci.jpg"} alt="Escuela Da Vinci" className="w-6 h-6 rounded-full inline-block align-middle" />
+      <img src={davinciImg} alt="Escuela Da Vinci" className="w-6 h-6 rounded-full inline-block align-middle" />
     ),
     value: personalData.graduationYear, 
     label: 'Graduación esperada',
@@ -135,12 +139,12 @@ const PERSONAL_STATS = [
 const EXPERIENCE_TIMELINE = [
   {
     id: 'devweb',
-    title: 'Desarrollador Web',
+    title: 'Desarrollador de Software',
     period: '2022 - Presente',
     type: 'trabajo',
     icon: FaBriefcase,
-    description: 'Desarrollo de aplicaciones web personalizadas utilizando React, Node.js y bases de datos SQL. Colaboración con equipos remotos y presenciales.',
-    achievements: ['15+ proyectos completados', 'Trabajo remoto/presencial', 'Full-stack development', 'Metodologías ágiles']
+    description: 'Desarrollo de aplicaciones web, móviles y software en general utilizando React, Node.js, Java y bases de datos SQL. Colaboración con equipos remotos y presenciales.',
+    achievements: ['15+ proyectos completados', 'Web, Móvil & Software', 'Full-stack development', 'Metodologías ágiles']
   },
   {
     id: 'university',
@@ -148,7 +152,7 @@ const EXPERIENCE_TIMELINE = [
     period: '2023 - 2025',
     type: 'educacion',
     icon: () => (
-      <img src={process.env.PUBLIC_URL + "/davinci.jpg"} alt="Escuela Da Vinci" className="w-6 h-6 rounded-full inline-block align-middle" />
+      <img src={davinciImg} alt="Escuela Da Vinci" className="w-6 h-6 rounded-full inline-block align-middle" />
     ),
     description: 'Carrera de Análisis de Sistemas con enfoque en desarrollo web y software. Graduado en diciembre 2025.',
     achievements: ['Análisis de Sistemas', 'Desarrollo de Software', 'Bases de Datos', 'Arquitectura de Software']
@@ -439,7 +443,7 @@ const About = () => {
                 {/* Imagen de comprobante de plan de estudio y promedio */}
                 <div className="flex flex-col items-center my-4">
                   <img
-                    src={process.env.PUBLIC_URL + "/promedio.png"}
+                    src={promedioImg}
                     alt="Comprobante de inscripción y promedio Escuela Da Vinci"
                     className="rounded-lg shadow-lg max-w-xs border border-dark-border"
                   />
@@ -448,7 +452,7 @@ const About = () => {
 
                 <p>
                   Durante los últimos <strong className="text-neon-blue">{personalData.experienceYears}</strong> he 
-                  trabajado en desarrollo web y software, creando soluciones tanto para proyectos individuales como colaborativos. Mi experiencia incluye trabajo en modalidad remota y presencial, lo que me ha permitido desarrollar excelentes habilidades de comunicación y adaptación.
+                  trabajado en desarrollo web, aplicaciones móviles y software en general, creando soluciones tanto para proyectos individuales como colaborativos. Mi experiencia incluye trabajo en modalidad remota y presencial, lo que me ha permitido desarrollar excelentes habilidades de comunicación y adaptación.
                 </p>
 
                 <p>
@@ -510,7 +514,7 @@ const About = () => {
                 </CardTitle>
                 <p className="text-dark-text/70 mb-6">
                   Estoy siempre abierto a nuevos proyectos y oportunidades. 
-                  Si tienes una idea o necesitas ayuda con desarrollo web o software, ¡hablemos!
+                  Si tienes una idea o necesitas ayuda con desarrollo web, apps móviles o software, ¡hablemos!
                 </p>
                 <div className="flex flex-wrap justify-center gap-4 text-sm">
                   <span className="px-4 py-2 bg-neon-blue/20 text-neon-blue rounded-full">
