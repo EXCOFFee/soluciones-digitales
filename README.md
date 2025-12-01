@@ -6,7 +6,7 @@ Landing page profesional para servicios de desarrollo de software. Diseño moder
 
 ## 🔗 Demo en Vivo
 
-**[Ver Sitio Web](https://excoffee.github.io/cv-web-santiago/)**
+**[Ver Sitio Web](https://excoffee.github.io/excoffee-soluciones/)**
 
 ## ✨ Servicios
 
@@ -73,8 +73,8 @@ src/
 
 ```bash
 # Clonar repositorio
-git clone https://github.com/EXCOFFee/cv-web-santiago.git
-cd cv-web-santiago
+git clone https://github.com/EXCOFFee/excoffee-soluciones.git
+cd excoffee-soluciones
 
 # Instalar dependencias
 npm install
@@ -101,7 +101,7 @@ npm run deploy
 
 El proyecto está desplegado en **GitHub Pages**.
 
-**URL**: [https://excoffee.github.io/cv-web-santiago/](https://excoffee.github.io/cv-web-santiago/)
+**URL**: [https://excoffee.github.io/excoffee-soluciones/](https://excoffee.github.io/excoffee-soluciones/)
 
 ## 📫 Contacto
 

@@ -1,7 +1,7 @@
 {
-  "name": "cv-web-santiago",
+  "name": "excoffee-soluciones",
   "version": "1.0.0",
-  "homepage": "https://EXCOFFee.github.io/cv-web-santiago",
+  "homepage": "https://EXCOFFee.github.io/excoffee-soluciones",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
