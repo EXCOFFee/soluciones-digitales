@@ -1,31 +1,40 @@
-# CV Web Santiago Excofier
+# EXCOFFee Soluciones
 
-## 🚀 Portfolio Personal - Desarrollador Full-Stack & Software
+## ☕ Desarrollo de Software, Apps y Webs que Impulsan tu Negocio
 
-Portfolio web moderno y responsive desarrollado con React, Tailwind CSS y tecnologías web modernas. Presenta mis habilidades, experiencia y proyectos en **desarrollo web, aplicaciones móviles y software en general** de forma interactiva y profesional.
+Landing page profesional para servicios de desarrollo de software. Diseño moderno y responsive desarrollado con React, Tailwind CSS y tecnologías web de última generación.
 
 ## 🔗 Demo en Vivo
 
-**[Ver Portfolio](https://excoffee.github.io/cv-web-santiago/)**
+**[Ver Sitio Web](https://excoffee.github.io/cv-web-santiago/)**
 
-## ✨ Características
+## ✨ Servicios
 
-- **🎨 Diseño Moderno**: Interface limpia y atractiva con animaciones suaves
-- **📱 Responsive**: Optimizado para todos los dispositivos
-- **⚡ Alto Rendimiento**: Bundle optimizado y carga rápida
-- **🎯 Interactivo**: Animaciones con Framer Motion y efectos visuales
-- **🔗 Navegación Suave**: Single Page Application con navegación fluida
-- **📧 Información de Contacto**: Enlaces directos a email, WhatsApp y redes sociales
-- **💼 Especialidades**: Desarrollo Web, Apps Móviles y Software en general
+- **🌐 Desarrollo Web**: Sitios web modernos, rápidos y optimizados para SEO
+- **📱 Apps Móviles**: Aplicaciones nativas e híbridas para iOS y Android
+- **💻 Software a Medida**: Sistemas de gestión, automatización y soluciones empresariales
+- **⚡ Consultoría Tecnológica**: Asesoramiento para digitalizar y optimizar tu negocio
 
-## 🛠️ Tecnologías Utilizadas
+## 🛠️ Stack Tecnológico
 
-- **Frontend**: React 18
-- **Estilos**: Tailwind CSS
-- **Animaciones**: Framer Motion
-- **Icons**: React Icons
-- **Build Tool**: Create React App
-- **Deployment**: Hostinger
+### Frontend
+- React 18, Next.js, Vue.js
+- Tailwind CSS, Framer Motion
+- TypeScript, JavaScript ES6+
+
+### Backend
+- Node.js, Express, NestJS
+- Python, Django, FastAPI
+- .NET, C#
+
+### Mobile
+- React Native, Flutter
+- Kotlin, Swift
+
+### DevOps & Herramientas
+- Docker, Git, GitHub Actions
+- AWS, Firebase, Vercel
+- PostgreSQL, MongoDB, MySQL
 
 ## 📂 Estructura del Proyecto
 
@@ -33,52 +42,48 @@ Portfolio web moderno y responsive desarrollado con React, Tailwind CSS y tecnol
 src/
 ├── components/          # Componentes React
 │   ├── UI/             # Componentes UI reutilizables
-│   ├── About.js        # Sección sobre mí
-│   ├── Contact.js      # Información de contacto
+│   ├── Hero.js         # Sección principal
+│   ├── About.js        # Servicios ofrecidos
+│   ├── Skills.js       # Tecnologías
 │   ├── Portfolio.js    # Proyectos realizados
-│   ├── Skills.js       # Habilidades técnicas
-│   └── ...
+│   ├── AIProductivity.js # Metodología ágil
+│   └── Contact.js      # Cotización y contacto
 ├── constants/          # Datos y configuraciones
-├── hooks/             # Custom hooks
-├── services/          # Servicios y utilidades
-└── utils/             # Funciones utilitarias
+├── hooks/              # Custom hooks
+├── services/           # Servicios y utilidades
+└── utils/              # Funciones utilitarias
 ```
 
-## 🎯 Secciones Incluidas
+## 🎯 Secciones del Sitio
 
-- **Hero**: Presentación principal con efecto de escritura
-- **Sobre Mí**: Información personal y profesional
-- **Habilidades**: Stack tecnológico y competencias
-- **Portfolio**: Proyectos destacados con enlaces
-- **Experiencia**: Trayectoria profesional
-- **Certificaciones**: Logros académicos y profesionales
-- **Contacto**: Información de contacto directa
+- **Hero**: Presentación principal con llamada a la acción
+- **Servicios**: Desarrollo Web, Apps Móviles, Software a Medida
+- **Tecnologías**: Stack técnico completo
+- **Portfolio**: Proyectos destacados con demos
+- **Metodología**: Desarrollo ágil con herramientas de IA
+- **Contacto**: WhatsApp y Email directo para cotizaciones
 
-## 🚀 Instalación y Uso
+## 🚀 Instalación y Desarrollo
 
 ### Prerrequisitos
-- Node.js (versión 14 o superior)
+- Node.js (versión 16 o superior)
 - npm o yarn
 
 ### Instalación
 
-1. Clona el repositorio:
 ```bash
+# Clonar repositorio
 git clone https://github.com/EXCOFFee/cv-web-santiago.git
 cd cv-web-santiago
-```
 
-2. Instala las dependencias:
-```bash
+# Instalar dependencias
 npm install
-```
 
-3. Inicia el servidor de desarrollo:
-```bash
+# Iniciar servidor de desarrollo
 npm start
 ```
 
-4. Abre [http://localhost:3000](http://localhost:3000) en tu navegador
+Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
 
 ### Build para Producción
 
@@ -86,29 +91,31 @@ npm start
 npm run build
 ```
 
-Los archivos optimizados se generarán en la carpeta `build/`.
+### Deploy a GitHub Pages
+
+```bash
+npm run deploy
+```
 
 ## 🌐 Deploy
 
-El proyecto está desplegado en **GitHub Pages** y también disponible para hosting en Hostinger u otros servicios.
+El proyecto está desplegado en **GitHub Pages**.
 
-**URL del sitio**: [https://excoffee.github.io/cv-web-santiago/](https://excoffee.github.io/cv-web-santiago/)
-
-Para deployar manualmente:
-1. Ejecuta `npm run build`
-2. Sube el contenido de la carpeta `build/` a tu servidor
+**URL**: [https://excoffee.github.io/cv-web-santiago/](https://excoffee.github.io/cv-web-santiago/)
 
 ## 📫 Contacto
 
-- **Email**: excofier.santi@gmail.com
-- **WhatsApp**: +54 11 6812-9155
-- **LinkedIn**: [santiago-excofier](https://www.linkedin.com/in/santiago-excofier-4649982b9/)
-- **GitHub**: [@EXCOFFee](https://github.com/EXCOFFee)
+¿Tienes un proyecto en mente? ¡Hablemos!
+
+- **📧 Email**: [excofier.santi@gmail.com](mailto:excofier.santi@gmail.com)
+- **📱 WhatsApp**: [+54 11 6812-9155](https://wa.me/5491168129155)
+- **💼 LinkedIn**: [santiago-excofier](https://www.linkedin.com/in/santiago-excofier-4649982b9/)
+- **🐙 GitHub**: [@EXCOFFee](https://github.com/EXCOFFee)
 
 ## 📝 Licencia
 
-Este proyecto es de uso personal. Todos los derechos reservados.
+© 2025 EXCOFFee Soluciones. Todos los derechos reservados.
 
 ---
 
-💻 Desarrollado con ❤️ por Santiago Excofier
+☕ **EXCOFFee Soluciones** - Transformando ideas en soluciones digitales

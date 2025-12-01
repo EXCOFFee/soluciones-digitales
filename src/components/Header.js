@@ -113,10 +113,15 @@ const HeaderLogo = ({ onClick, className = '' }) => (
     onClick={onClick}
     whileHover={{ scale: 1.05 }}
     whileTap={{ scale: 0.95 }}
-    className={`text-2xl font-bold text-neon-blue font-jetbrains transition-colors duration-300 hover:text-neon-blue/80 focus:outline-none focus:ring-2 focus:ring-neon-blue/50 focus:ring-offset-2 focus:ring-offset-dark-bg rounded-lg px-2 py-1 ${className}`}
+    className={`flex items-center gap-2 text-2xl font-bold text-neon-blue font-jetbrains transition-colors duration-300 hover:text-neon-blue/80 focus:outline-none focus:ring-2 focus:ring-neon-blue/50 focus:ring-offset-2 focus:ring-offset-dark-bg rounded-lg px-2 py-1 ${className}`}
     aria-label="Ir al inicio"
   >
-    &lt;Santiago /&gt;
+    <img 
+      src={`${process.env.PUBLIC_URL}/logo.png`} 
+      alt="EXCOFFee Logo" 
+      className="w-8 h-8 object-contain"
+    />
+    <span>EXCOFFee</span>
   </motion.button>
 );
 
