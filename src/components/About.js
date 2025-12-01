@@ -21,17 +21,13 @@
 
 import React, { useMemo } from 'react';
 import { motion } from 'framer-motion';
-import { FaGraduationCap, FaCode, FaUsers, FaRocket, FaCalendar, FaBriefcase } from 'react-icons/fa';
+import { FaCode, FaUsers, FaRocket, FaCalendar, FaBriefcase } from 'react-icons/fa';
 import PropTypes from 'prop-types';
 
 // Importar hooks personalizados y datos
 import useScrollAnimation from '../hooks/useScrollAnimation';
 import { personalData } from '../constants/personalData';
 import Card, { CardHeader, CardTitle, CardContent, StatCard } from './UI/Card';
-
-// Importar imágenes
-import promedioImg from '../assets/images/promedio.png';
-import davinciImg from '../assets/images/davinci.jpg';
 
 /**
  * Configuración de animaciones para la sección About
@@ -105,29 +101,27 @@ const ABOUT_ANIMATIONS = {
  */
 const PERSONAL_STATS = [
   { 
-    icon: () => (
-      <img src={davinciImg} alt="Escuela Da Vinci" className="w-6 h-6 rounded-full inline-block align-middle" />
-    ),
-    value: personalData.graduationYear, 
-    label: 'Graduación esperada',
-    color: 'text-blue-400'
-  },
-  { 
-    icon: FaCode, 
-    value: personalData.experienceYears, 
-    label: 'Años de experiencia',
+    icon: FaRocket,
+    value: '20+', 
+    label: 'Proyectos entregados',
     color: 'text-green-400'
   },
   { 
+    icon: FaCode, 
+    value: '+3', 
+    label: 'Años de experiencia',
+    color: 'text-blue-400'
+  },
+  { 
     icon: FaUsers, 
-    value: personalData.projectsCompleted, 
-    label: 'Proyectos completados',
+    value: '10+', 
+    label: 'Clientes satisfechos',
     color: 'text-purple-400'
   },
   { 
-    icon: FaRocket, 
+    icon: FaBriefcase, 
     value: '100%', 
-    label: 'Dedicación',
+    label: 'Compromiso total',
     color: 'text-orange-400'
   },
 ];
@@ -138,33 +132,31 @@ const PERSONAL_STATS = [
  */
 const EXPERIENCE_TIMELINE = [
   {
-    id: 'devweb',
-    title: 'Desarrollador de Software',
-    period: '2022 - Presente',
-    type: 'trabajo',
+    id: 'web',
+    title: 'Desarrollo Web Profesional',
+    period: 'Landing Pages & E-commerce',
+    type: 'servicio',
     icon: FaBriefcase,
-    description: 'Desarrollo de aplicaciones web, móviles y software en general utilizando React, Node.js, Java y bases de datos SQL. Colaboración con equipos remotos y presenciales.',
-    achievements: ['15+ proyectos completados', 'Web, Móvil & Software', 'Full-stack development', 'Metodologías ágiles']
+    description: 'Sitios web modernos, rápidos y optimizados para conversión. Desde landing pages que venden hasta tiendas online completas con gestión de pagos y stock.',
+    achievements: ['React / Next.js', 'E-commerce', 'SEO Optimizado', 'Diseño Responsive']
   },
   {
-    id: 'university',
-    title: 'Graduado - Escuela Da Vinci',
-    period: '2023 - 2025',
-    type: 'educacion',
-    icon: () => (
-      <img src={davinciImg} alt="Escuela Da Vinci" className="w-6 h-6 rounded-full inline-block align-middle" />
-    ),
-    description: 'Carrera de Análisis de Sistemas con enfoque en desarrollo web y software. Graduado en diciembre 2025.',
-    achievements: ['Análisis de Sistemas', 'Desarrollo de Software', 'Bases de Datos', 'Arquitectura de Software']
-  },
-  {
-    id: 'courses',
-    title: 'Formación Complementaria',
-    period: '2022 - 2023',
-    type: 'educacion',
+    id: 'software',
+    title: 'Software de Gestión a Medida',
+    period: 'Sistemas & Automatización',
+    type: 'servicio',
     icon: FaCode,
-    description: 'Cursos especializados en CoderHouse: JavaScript, React, Node.js, y tecnologías de frontend y backend.',
-    achievements: ['JavaScript ES6+', 'React.js', 'Node.js', 'Desarrollo Frontend/Backend']
+    description: 'Sistemas personalizados que automatizan tus procesos de negocio: facturación, inventario, CRM, reportes y más. Ahorra tiempo y reduce errores.',
+    achievements: ['Sistemas a medida', 'Automatización', 'Base de datos', 'APIs & Integraciones']
+  },
+  {
+    id: 'mobile',
+    title: 'Aplicaciones Móviles',
+    period: 'iOS & Android',
+    type: 'servicio',
+    icon: FaRocket,
+    description: 'Apps móviles nativas y multiplataforma que conectan con tus clientes donde estén. Interfaces intuitivas y rendimiento óptimo.',
+    achievements: ['Apps Nativas', 'Multiplataforma', 'UI/UX Intuitivo', 'Push Notifications']
   }
 ];
 
@@ -174,21 +166,21 @@ const EXPERIENCE_TIMELINE = [
  */
 const PERSONAL_VALUES = [
   {
-    icon: '🎯',
-    title: 'Orientado a Resultados',
-    description: 'Enfoque en soluciones eficientes y de calidad',
+    icon: '⚡',
+    title: 'Entrega Rápida',
+    description: 'Desarrollo ágil con entregas parciales para que veas avances constantes',
     color: 'from-blue-500/20 to-blue-600/10'
   },
   {
-    icon: '🚀',
-    title: 'Aprendizaje Continuo',
-    description: 'Siempre actualizado con las últimas tecnologías',
+    icon: '💰',
+    title: 'Precio Justo',
+    description: 'Sin intermediarios ni agencias. Trabajas directo conmigo, pagas menos',
     color: 'from-green-500/20 to-green-600/10'
   },
   {
-    icon: '🤝',
-    title: 'Trabajo en Equipo',
-    description: 'Comunicación clara y colaboración efectiva',
+    icon: '🛡️',
+    title: 'Soporte Post-Entrega',
+    description: 'No te dejo solo. Soporte y mantenimiento incluido por 30 días',
     color: 'from-purple-500/20 to-purple-600/10'
   }
 ];
@@ -204,7 +196,7 @@ const SectionTitle = ({ title, subtitle, className = '' }) => (
   >
     <CardTitle level={2} className="mb-6" color="text-dark-text">
       {title.split(' ').map((word, index) => 
-        word === 'mí' ? (
+        word === 'Servicios' || word === 'Ofrezco' ? (
           <span key={index} className="text-neon-blue"> {word}</span>
         ) : (
           <span key={index}> {word}</span>
@@ -303,11 +295,11 @@ const ExperienceTimeline = ({ experiences, isVisible }) => (
                     </div>
                   </div>
                   <span className={`px-3 py-1 rounded-full text-xs font-medium ${
-                    experience.type === 'trabajo' 
-                      ? 'bg-green-500/20 text-green-400' 
+                    experience.type === 'servicio' 
+                      ? 'bg-neon-blue/20 text-neon-blue' 
                       : 'bg-blue-500/20 text-blue-400'
                   }`}>
-                    {experience.type === 'trabajo' ? 'Experiencia Laboral' : 'Formación Académica'}
+                    {experience.type === 'servicio' ? 'Servicio Disponible' : 'Servicio'}
                   </span>
                 </div>
               </div>
@@ -348,7 +340,7 @@ const PersonalValues = ({ values, isVisible }) => (
   <Card variant="glass" padding="lg" animation="glow">
     <CardHeader>
       <CardTitle level={3} color="text-neon-blue" className="text-center">
-        Mis Valores
+        ¿Por qué Trabajar Conmigo?
       </CardTitle>
     </CardHeader>
     
@@ -415,8 +407,8 @@ const About = () => {
       <div className="container mx-auto px-4">
         {/* Título de la sección */}
         <SectionTitle
-          title="Sobre mí"
-          subtitle="Mi trayectoria profesional, formación y valores que me definen como desarrollador"
+          title="Servicios que Ofrezco"
+          subtitle="Soluciones digitales completas para hacer crecer tu negocio. Desde la idea hasta el producto final."
         />
 
         <div className="grid lg:grid-cols-2 gap-12 items-start">
@@ -429,36 +421,24 @@ const About = () => {
             <Card variant="glass" padding="lg" animation="hover">
               <CardHeader>
                 <CardTitle level={3} color="text-neon-blue">
-                  Mi Historia
+                  Mi Enfoque
                 </CardTitle>
               </CardHeader>
               
               <CardContent className="space-y-4 leading-relaxed">
                 <p>
                   Soy <strong className="text-neon-blue">{personalInfo.name}</strong>, 
-                  un desarrollador apasionado por la tecnología y la innovación. 
-                  Graduado de la carrera de <strong>{personalInfo.university}</strong> (finalizada en diciembre 2025).
-                </p>
-
-                {/* Imagen de comprobante de plan de estudio y promedio */}
-                <div className="flex flex-col items-center my-4">
-                  <img
-                    src={promedioImg}
-                    alt="Comprobante de inscripción y promedio Escuela Da Vinci"
-                    className="rounded-lg shadow-lg max-w-xs border border-dark-border"
-                  />
-                  <span className="text-xs text-dark-text/60 mt-2">Comprobante de inscripción y promedio (8,42) - Escuela Da Vinci</span>
-                </div>
-
-                <p>
-                  Durante los últimos <strong className="text-neon-blue">{personalData.experienceYears}</strong> he 
-                  trabajado en desarrollo web, aplicaciones móviles y software en general, creando soluciones tanto para proyectos individuales como colaborativos. Mi experiencia incluye trabajo en modalidad remota y presencial, lo que me ha permitido desarrollar excelentes habilidades de comunicación y adaptación.
+                  desarrollador full-stack especializado en crear soluciones digitales que <strong>realmente funcionan</strong> para tu negocio.
                 </p>
 
                 <p>
-                  Mi especialidad está en el <strong className="text-neon-blue">desarrollo full-stack con JavaScript</strong>, 
-                  pero lo que realmente me diferencia es mi enfoque en el uso de herramientas de IA para optimizar 
-                  el proceso de desarrollo, aumentar la productividad y crear código de mayor calidad.
+                  A diferencia de las agencias tradicionales, trabajo <strong className="text-neon-blue">directo contigo</strong>. 
+                  Esto significa comunicación fluida, tiempos de respuesta rápidos y <strong>precios justos sin intermediarios</strong>.
+                </p>
+
+                <p>
+                  Mi metodología combina <strong className="text-neon-blue">desarrollo ágil</strong> con herramientas de 
+                  <strong> Inteligencia Artificial</strong> para entregar proyectos de alta calidad en tiempo récord.
                 </p>
 
                 <div className="pt-4 border-t border-dark-border">
@@ -466,7 +446,7 @@ const About = () => {
                     <span>📍</span>
                     <span>{personalInfo.location}</span>
                     <span>•</span>
-                    <span className="text-neon-blue">{personalInfo.specialization}</span>
+                    <span className="text-neon-blue">Trabajo Remoto & Presencial</span>
                   </div>
                 </div>
               </CardContent>
@@ -482,7 +462,7 @@ const About = () => {
             className="space-y-8"
           >
             <CardTitle level={3} color="text-neon-blue">
-              Experiencia & Formación
+              Soluciones que Desarrollo
             </CardTitle>
             
             <ExperienceTimeline 
@@ -508,23 +488,23 @@ const About = () => {
           <Card variant="gradient" padding="lg" animation="glow">
             <CardContent>
               <div className="max-w-2xl mx-auto">
-                <div className="text-neon-blue text-4xl mb-4">💡</div>
+                <div className="text-neon-blue text-4xl mb-4">🚀</div>
                 <CardTitle level={4} className="mb-4" color="text-dark-text">
-                  ¿Interesado en contratarme?
+                  ¿Listo para Impulsar tu Negocio?
                 </CardTitle>
                 <p className="text-dark-text/70 mb-6">
-                  Estoy siempre abierto a nuevos proyectos y oportunidades. 
-                  Si tienes una idea o necesitas ayuda con desarrollo web, apps móviles o software, ¡hablemos!
+                  Cuéntame tu idea y te doy una cotización sin compromiso en menos de 24 horas. 
+                  Sin letra chica, sin sorpresas.
                 </p>
                 <div className="flex flex-wrap justify-center gap-4 text-sm">
                   <span className="px-4 py-2 bg-neon-blue/20 text-neon-blue rounded-full">
-                    Disponible para proyectos
+                    Cotización gratuita
                   </span>
                   <span className="px-4 py-2 bg-green-500/20 text-green-400 rounded-full">
-                    Trabajo remoto
+                    Respuesta en 24hs
                   </span>
-                  <span className="px-4 py-2 bg-blue-500/20 text-blue-400 rounded-full">
-                    Colaboración en equipo
+                  <span className="px-4 py-2 bg-purple-500/20 text-purple-400 rounded-full">
+                    Sin compromiso
                   </span>
                 </div>
               </div>

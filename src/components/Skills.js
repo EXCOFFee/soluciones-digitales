@@ -109,135 +109,51 @@ const SKILLS_ANIMATIONS = {
  * Organizadas por categorías para mejor presentación
  */
 const TECH_CATEGORIES = {
-  languages: {
-    title: 'Lenguajes de Programación',
-    description: 'Lenguajes de programación principales',
+  web: {
+    title: 'Desarrollo Web Moderno',
+    description: 'Tecnologías para crear webs rápidas y modernas',
     color: 'text-blue-400',
     bgColor: 'from-blue-500/10 to-blue-600/5',
     technologies: [
-      { name: 'JavaScript', icon: FaJs, level: 100, experience: '3 años', color: '#F7DF1E' },
-      { name: 'Java', icon: FaJava, level: 100, experience: '3 años', color: '#ED8B00' },
-      { name: 'Python', icon: FaPython, level: 85, experience: '2 años', color: '#3776AB' },
-      { name: 'PHP', icon: FaPhp, level: 100, experience: '3 años', color: '#777BB4' },
-      { name: 'C#', icon: SiCsharp, level: 30, experience: '6 meses', color: '#239120' },
-      { name: 'SQL', icon: SiMysql, level: 100, experience: '3 años', color: '#4479A1' }
+      { name: 'React.js', icon: FaReact, color: '#61DAFB' },
+      { name: 'Next.js', icon: SiNextdotjs, color: '#000000' },
+      { name: 'JavaScript', icon: FaJs, color: '#F7DF1E' },
+      { name: 'HTML5', icon: FaHtml5, color: '#E34F26' },
+      { name: 'CSS3', icon: FaCss3Alt, color: '#1572B6' },
+      { name: 'Tailwind', icon: SiTailwindcss, color: '#06B6D4' }
     ]
   },
 
-  web: {
-    title: 'Frameworks y Tecnologías Web/Software',
-    description: 'Tecnologías para desarrollo web y software',
+  backend: {
+    title: 'Backend & Sistemas',
+    description: 'Lógica de negocio, APIs y bases de datos',
     color: 'text-green-400',
     bgColor: 'from-green-500/10 to-green-600/5',
     technologies: [
-      { name: 'React.js', icon: FaReact, level: 85, experience: '2 años', color: '#61DAFB' },
-      { name: 'Node.js', icon: FaNodeJs, level: 80, experience: '2 años', color: '#339933' },
-      { name: 'Express.js', icon: SiExpress, level: 75, experience: '1.5 años', color: '#000000' },
-      { name: 'Laravel', icon: FaPhp, level: 80, experience: '2 años', color: '#FF2D20' },
-      { name: 'API REST', icon: FaServer, level: 85, experience: '2 años', color: '#FF6B35' },
-      { name: 'Tailwind CSS', icon: SiTailwindcss, level: 85, experience: '1.5 años', color: '#06B6D4' },
-      { name: 'HTML5', icon: FaHtml5, level: 100, experience: '3+ años', color: '#E34F26' },
-      { name: 'CSS', icon: FaCss3Alt, level: 100, experience: '3+ años', color: '#1572B6' }
-    ]
-  },
-
-  ai: {
-    title: 'Inteligencia Artificial / Productividad',
-    description: 'Herramientas de IA y productividad',
-    color: 'text-purple-400',
-    bgColor: 'from-purple-500/10 to-purple-600/5',
-    technologies: [
-      { name: 'ChatGPT', icon: SiOpenai, level: 100, experience: '2 años', color: '#10A37F' },
-      { name: 'Anthropic Claude', icon: SiOpenai, level: 85, experience: '1.5 años', color: '#D97706' },
-      { name: 'Cursor', icon: FaCode, level: 90, experience: '1.5 años', color: '#007ACC' },
-      { name: 'GitHub Copilot', icon: FaGithub, level: 85, experience: '1.5 años', color: '#181717' },
-      { name: 'Prompts de IA', icon: FaBrain, level: 80, experience: '2 años', color: '#8B5CF6' },
-      { name: 'IA para Debug', icon: FaBug, level: 85, experience: '2 años', color: '#EF4444' }
+      { name: 'Node.js', icon: FaNodeJs, color: '#339933' },
+      { name: 'Java', icon: FaJava, color: '#ED8B00' },
+      { name: 'PHP', icon: FaPhp, color: '#777BB4' },
+      { name: 'Python', icon: FaPython, color: '#3776AB' },
+      { name: 'MySQL', icon: SiMysql, color: '#4479A1' },
+      { name: 'API REST', icon: FaServer, color: '#FF6B35' }
     ]
   },
 
   tools: {
-    title: 'Herramientas de Desarrollo y Hosting',
-    description: 'Herramientas de desarrollo y hosting',
+    title: 'Herramientas & DevOps',
+    description: 'Control de versiones, hosting y productividad',
     color: 'text-orange-400',
     bgColor: 'from-orange-500/10 to-orange-600/5',
     technologies: [
-      { name: 'Git', icon: FaGitAlt, level: 100, experience: '3 años', color: '#F05032' },
-      { name: 'GitHub', icon: FaGithub, level: 100, experience: '3 años', color: '#181717' },
-      { name: 'XAMPP', icon: FaServer, level: 100, experience: '3 años', color: '#FB7A24' },
-      { name: 'PhpMyAdmin', icon: SiMysql, level: 100, experience: '3 años', color: '#4479A1' },
-      { name: 'Hostinger', icon: FaServer, level: 100, experience: '3 años', color: '#0066FF' },
-      { name: 'WordPress', icon: FaWordpress, level: 100, experience: '3 años', color: '#21759B' },
-      { name: 'Trello', icon: FaTrello, level: 100, experience: '2 años', color: '#0052CC' },
-      { name: 'Jira', icon: FaJira, level: 85, experience: '1 año', color: '#0052CC' }
-    ]
-  },
-
-  database: {
-    title: 'Bases de Datos',
-    description: 'Sistemas de gestión de datos',
-    color: 'text-cyan-400',
-    bgColor: 'from-cyan-500/10 to-cyan-600/5',
-    technologies: [
-      { name: 'MySQL', icon: SiMysql, level: 100, experience: '3 años', color: '#4479A1' }
-    ]
-  },
-
-  softSkills: {
-    title: 'Habilidades Blandas y Técnicas',
-    description: 'Habilidades complementarias',
-    color: 'text-pink-400',
-    bgColor: 'from-pink-500/10 to-pink-600/5',
-    technologies: [
-      { name: 'Resolución de Problemas', icon: FaLightbulb, level: 100, experience: 'Experto', color: '#F59E0B' },
-      { name: 'Capacidad de Análisis', icon: FaChartLine, level: 100, experience: 'Experto', color: '#10B981' },
-      { name: 'Comunicación', icon: FaComments, level: 100, experience: 'Experto', color: '#3B82F6' },
-      { name: 'Adaptación', icon: FaRandom, level: 100, experience: 'Experto', color: '#8B5CF6' },
-      { name: 'Gestión de Proyectos', icon: FaProjectDiagram, level: 100, experience: 'Experto', color: '#EF4444' },
-      { name: 'Formación', icon: FaGraduationCap, level: 100, experience: 'Experto', color: '#06B6D4' },
-      { name: 'Programación', icon: FaCode, level: 100, experience: '3 años', color: '#F7DF1E' },
-      { name: 'Desarrollo de Software', icon: FaLaptopCode, level: 100, experience: '3 años', color: '#10B981' },
-      { name: 'Aprendizaje Activo', icon: FaBookOpen, level: 100, experience: 'Experto', color: '#8B5CF6' }
-    ]
-  },
-
-  education: {
-    title: 'Formación Académica',
-    description: 'Estudios y certificaciones',
-    color: 'text-indigo-400',
-    bgColor: 'from-indigo-500/10 to-indigo-600/5',
-    technologies: [
-      { name: 'Escuela Da Vinci', icon: FaGraduationCap, level: 100, experience: 'Graduado (Diciembre 2025)', color: '#6366F1', description: 'Analista de Sistemas (graduado)' },
-      { name: 'CoderHouse', icon: FaGraduationCap, level: 100, experience: 'Completado', color: '#10B981', description: 'Frontend y Backend' }
-    ]
-  },
-
-  developmentTypes: {
-    title: 'Tipos de Desarrollo',
-    description: 'Especialidades de desarrollo',
-    color: 'text-teal-400',
-    bgColor: 'from-teal-500/10 to-teal-600/5',
-    technologies: [
-      { name: 'Desarrollo Frontend', icon: FaCode, level: 85, experience: '2 años', color: '#14B8A6' },
-      { name: 'Desarrollo Backend', icon: FaServer, level: 85, experience: '2 años', color: '#0EA5E9' },
-      { name: 'Desarrollo Full Stack', icon: FaLaptopCode, level: 85, experience: '2 años', color: '#8B5CF6' },
-      { name: 'Desarrollo Web', icon: FaHtml5, level: 90, experience: '2 años', color: '#F59E0B' },
-      { name: 'Desarrollo de Software', icon: FaCode, level: 85, experience: '2 años', color: '#9333EA' }
+      { name: 'Git', icon: FaGitAlt, color: '#F05032' },
+      { name: 'GitHub', icon: FaGithub, color: '#181717' },
+      { name: 'VS Code', icon: FaCode, color: '#007ACC' },
+      { name: 'WordPress', icon: FaWordpress, color: '#21759B' },
+      { name: 'Trello', icon: FaTrello, color: '#0052CC' },
+      { name: 'Jira', icon: FaJira, color: '#0052CC' }
     ]
   }
 };
-
-/**
- * Configuración de frameworks y librerías adicionales
- * Tecnologías complementarias y en aprendizaje
- */
-const ADDITIONAL_FRAMEWORKS = [
-  { name: 'Next.js', icon: SiNextdotjs, status: 'learning', color: '#000000' },
-  { name: 'Vue.js', icon: SiVuedotjs, status: 'learning', color: '#4FC08D' },
-  { name: 'Angular', icon: SiAngular, status: 'basic', color: '#DD0031' },
-  { name: 'C#', icon: SiCsharp, status: 'beginner', color: '#239120' },
-  { name: '.NET', icon: SiDotnet, status: 'beginner', color: '#512BD4' }
-];
 
 /**
  * Configuración de niveles de experiencia
@@ -301,15 +217,6 @@ SectionTitle.propTypes = {
  * Tarjeta con información detallada de cada skill
  */
 const TechnologyCard = ({ tech, index, isVisible }) => {
-  const experienceLevel = useMemo(() => {
-    const level = getExperienceLevel(tech.level);
-    // Color especial para Python y C# cuando son avanzados (85-99%)
-    if ((tech.name === 'Python' || tech.name === 'C#') && tech.level >= 85 && tech.level < 100) {
-      return EXPERIENCE_LEVELS.advancedSpecial;
-    }
-    return level;
-  }, [tech.level, tech.name]);
-
   return (
     <motion.div
       custom={index}
@@ -317,82 +224,32 @@ const TechnologyCard = ({ tech, index, isVisible }) => {
       animate={isVisible ? "visible" : "hidden"}
       variants={SKILLS_ANIMATIONS.skillCard}
       whileHover={{ 
-        scale: 1.05,
+        scale: 1.08,
         transition: { duration: 0.2 }
       }}
       className="group"
     >
-      <Card
-        variant="glass"
-        padding="lg"
-        animation="hover"
-        className="h-full"
-      >
-        <CardHeader className="text-center">
-          <motion.div
-            variants={SKILLS_ANIMATIONS.skillIcon}
-            className="flex flex-col items-center gap-4"
-          >
-            {/* Icono de la tecnología */}
-            <div 
-              className="p-4 rounded-2xl transition-all duration-300 group-hover:scale-110"
-              style={{ backgroundColor: `${tech.color}20` }}
-            >
-              {tech.icon ? (
-                <tech.icon 
-                  className="text-4xl transition-colors duration-300"
-                  style={{ color: tech.color }}
-                />
-              ) : (
-                <div className="text-4xl text-red-500">⚠️</div>
-              )}
-            </div>
-            
-            {/* Nombre de la tecnología */}
-            <CardTitle level={4} color="text-dark-text">
-              {tech.name}
-            </CardTitle>
-          </motion.div>
-        </CardHeader>
-
-        <CardContent className="space-y-4">
-          {/* Barra de progreso */}
-          <div className="relative">
-            <div className="flex justify-between items-center mb-2">
-              <span className="text-sm text-dark-text/70">Nivel</span>
-              <span className="text-sm font-medium text-neon-blue">{tech.level}%</span>
-            </div>
-            <div className="w-full bg-dark-bg rounded-full h-2 overflow-hidden">
-              <motion.div
-                custom={tech.level}
-                initial="hidden"
-                animate={isVisible ? "visible" : "hidden"}
-                variants={SKILLS_ANIMATIONS.progressBar}
-                className="h-full bg-gradient-to-r from-neon-blue to-blue-400 rounded-full"
-              />
-            </div>
-          </div>
-
-          {/* Información adicional */}
-          <div className="space-y-2">
-            {tech.experience !== 'Experto' && (
-              <div className="flex items-center justify-between">
-                <span className="text-sm text-dark-text/70">Experiencia:</span>
-                <span className="text-sm font-medium text-dark-text">{tech.experience}</span>
-              </div>
-            )}
-            
-            {tech.experience !== 'Experto' && (
-              <div className="flex items-center justify-between">
-                <span className="text-sm text-dark-text/70">Nivel:</span>
-                <span className={`text-xs px-2 py-1 rounded-full ${experienceLevel.bgColor} ${experienceLevel.color}`}>
-                  {tech.name === 'Programación' || tech.name === 'Desarrollo de Software' ? 'Siempre Aprendiendo!!' : experienceLevel.label}
-                </span>
-              </div>
-            )}
-          </div>
-        </CardContent>
-      </Card>
+      <div className="flex flex-col items-center p-4 rounded-xl bg-dark-card/30 backdrop-blur-sm border border-dark-border hover:border-neon-blue/50 transition-all duration-300">
+        {/* Icono de la tecnología */}
+        <div 
+          className="p-3 rounded-xl transition-all duration-300 group-hover:scale-110 mb-3"
+          style={{ backgroundColor: `${tech.color}15` }}
+        >
+          {tech.icon ? (
+            <tech.icon 
+              className="text-3xl transition-colors duration-300"
+              style={{ color: tech.color }}
+            />
+          ) : (
+            <div className="text-3xl text-red-500">⚠️</div>
+          )}
+        </div>
+        
+        {/* Nombre de la tecnología */}
+        <span className="text-sm font-medium text-dark-text text-center">
+          {tech.name}
+        </span>
+      </div>
     </motion.div>
   );
 };
@@ -410,22 +267,22 @@ TechnologyCard.propTypes = {
 const TechnologyCategory = ({ category, technologies, isVisible }) => (
   <motion.div
     variants={SKILLS_ANIMATIONS.section}
-    className="mb-16"
+    className="mb-12"
   >
     <Card
       variant="glass"
       padding="lg"
-      animation="glow"
+      animation="hover"
       className={`bg-gradient-to-br ${category.bgColor} border-dark-border`}
     >
-      <CardHeader className="text-center mb-8">
+      <CardHeader className="text-center mb-6">
         <CardTitle level={3} color={category.color}>
           {category.title}
         </CardTitle>
-        <p className="text-dark-text/70 mt-2">{category.description}</p>
+        <p className="text-dark-text/70 mt-2 text-sm">{category.description}</p>
       </CardHeader>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4">
         {technologies.map((tech, index) => (
           <TechnologyCard
             key={tech.name}
@@ -596,14 +453,11 @@ const Skills = () => {
         {/* Título de la sección */}
         <SectionTitle
           title="Tecnologías"
-          subtitle="Stack tecnológico, frameworks y herramientas que domino para crear soluciones eficientes"
+          subtitle="Las herramientas que uso para construir tus soluciones digitales"
         />
 
-        {/* Resumen de habilidades */}
-        <SkillsSummary isVisible={debugIsVisible} />
-
         {/* Categorías de tecnologías */}
-        <div className="space-y-16">
+        <div className="space-y-8">
           {categories.map(([categoryKey, category]) => (
             <TechnologyCategory
               key={categoryKey}
@@ -614,37 +468,31 @@ const Skills = () => {
           ))}
         </div>
 
-        {/* Frameworks adicionales */}
-        <AdditionalFrameworks 
-          frameworks={ADDITIONAL_FRAMEWORKS} 
-          isVisible={debugIsVisible} 
-        />
-
         {/* Call to action */}
         <motion.div
           variants={SKILLS_ANIMATIONS.section}
-          className="text-center"
+          className="text-center mt-12"
         >
           <Card variant="gradient" padding="lg" animation="glow">
             <CardContent>
               <div className="max-w-2xl mx-auto">
-                <div className="text-neon-blue text-4xl mb-4">🚀</div>
+                <div className="text-neon-blue text-4xl mb-4">🛠️</div>
                 <CardTitle level={4} className="mb-4" color="text-dark-text">
-                  Siempre Aprendiendo
+                  La Tecnología Correcta para tu Proyecto
                 </CardTitle>
                 <p className="text-dark-text/70 mb-6">
-                  La tecnología evoluciona constantemente, y yo evoluciono con ella. 
-                  Siempre estoy explorando nuevas herramientas y metodologías para mejorar mis soluciones.
+                  Cada proyecto es único. Selecciono las herramientas ideales para tu caso específico, 
+                  garantizando rendimiento, escalabilidad y fácil mantenimiento.
                 </p>
                 <div className="flex flex-wrap justify-center gap-4 text-sm">
                   <span className="px-4 py-2 bg-neon-blue/20 text-neon-blue rounded-full">
-                    Aprendizaje continuo
+                    Código limpio
                   </span>
                   <span className="px-4 py-2 bg-green-500/20 text-green-400 rounded-full">
-                    Mejores prácticas
+                    Alto rendimiento
                   </span>
                   <span className="px-4 py-2 bg-purple-500/20 text-purple-400 rounded-full">
-                    Innovación constante
+                    Fácil mantenimiento
                   </span>
                 </div>
               </div>

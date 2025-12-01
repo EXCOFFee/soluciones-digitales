@@ -221,33 +221,33 @@ const AI_TOOLS = {
 const AI_BENEFITS = [
   {
     icon: FaChartLine,
-    title: 'Productividad',
-    value: '+75%',
-    description: 'Aumento en velocidad de desarrollo',
+    title: 'Entrega Rápida',
+    value: '-40%',
+    description: 'Menos tiempo de desarrollo vs métodos tradicionales',
     color: 'text-green-400',
     bgColor: 'bg-green-500/20'
   },
   {
     icon: FaLightbulb,
-    title: 'Calidad de Código',
-    value: '+60%',
-    description: 'Mejora en estándares y buenas prácticas',
+    title: 'Menos Errores',
+    value: '-60%',
+    description: 'Reducción de bugs gracias a validación con IA',
     color: 'text-yellow-400',
     bgColor: 'bg-yellow-500/20'
   },
   {
     icon: FaSearch,
-    title: 'Debugging',
+    title: 'Mejor Código',
     value: '+80%',
-    description: 'Reducción en tiempo de resolución',
+    description: 'Código más limpio y mantenible',
     color: 'text-blue-400',
     bgColor: 'bg-blue-500/20'
   },
   {
     icon: FaEdit,
-    title: 'Documentación',
-    value: '+90%',
-    description: 'Mejora en documentación técnica',
+    title: 'Ahorro',
+    value: '$$$',
+    description: 'Optimización de tu inversión en desarrollo',
     color: 'text-purple-400',
     bgColor: 'bg-purple-500/20'
   }
@@ -306,7 +306,7 @@ const SectionTitle = ({ title, subtitle, className = '' }) => (
   >
     <CardTitle level={2} className="mb-6" color="text-dark-text">
       {title.split(' ').map((word, index) => 
-        word === 'IA' || word === 'Productividad' ? (
+        word === 'Ágil' || word === 'Acelerado' ? (
           <span key={index} className="text-neon-blue"> {word}</span>
         ) : (
           <span key={index}> {word}</span>
@@ -315,7 +315,7 @@ const SectionTitle = ({ title, subtitle, className = '' }) => (
     </CardTitle>
     <div className="w-20 h-1 bg-neon-blue mx-auto mb-8"></div>
     {subtitle && (
-      <p className="text-lg text-dark-text/70 max-w-2xl mx-auto">
+      <p className="text-lg text-dark-text/70 max-w-3xl mx-auto">
         {subtitle}
       </p>
     )}
@@ -613,8 +613,8 @@ const AIProductivity = () => {
     >
       <div className="container mx-auto px-4">
         <SectionTitle
-          title="IA & Productividad"
-          subtitle="Herramientas de inteligencia artificial que uso para optimizar mi desarrollo y aumentar la productividad"
+          title="Desarrollo Ágil y Acelerado"
+          subtitle="Utilizo las últimas tecnologías de Inteligencia Artificial para acelerar la codificación, reducir errores y entregar tu software en tiempo récord, optimizando tu presupuesto."
         />
 
         {/* Beneficios */}
@@ -651,21 +651,22 @@ const AIProductivity = () => {
                   <MdSmartToy className="mx-auto" />
                 </motion.div>
                 <CardTitle level={4} className="mb-4" color="text-dark-text">
-                  El Futuro es Ahora
+                  Tecnología de Vanguardia a tu Servicio
                 </CardTitle>
                 <p className="text-dark-text/70 mb-6">
-                  La IA no reemplaza al desarrollador, lo potencia. Uso estas herramientas para crear 
-                  soluciones más eficientes, código más limpio y documentación más clara.
+                  Combino mi experiencia con las herramientas más avanzadas del mercado para 
+                  entregarte soluciones de calidad superior en menos tiempo. Tu proyecto se beneficia 
+                  de lo mejor de ambos mundos: creatividad humana y precisión de la IA.
                 </p>
                 <div className="flex flex-wrap justify-center gap-4 text-sm">
                   <span className="px-4 py-2 bg-neon-blue/20 text-neon-blue rounded-full">
-                    Desarrollo asistido por IA
+                    Entregas más rápidas
                   </span>
                   <span className="px-4 py-2 bg-purple-500/20 text-purple-400 rounded-full">
-                    Productividad optimizada
+                    Menor costo
                   </span>
                   <span className="px-4 py-2 bg-green-500/20 text-green-400 rounded-full">
-                    Calidad mejorada
+                    Mayor calidad
                   </span>
                 </div>
               </div>

@@ -200,7 +200,7 @@ const SectionTitle = ({ title, subtitle, className = '' }) => (
   >
     <CardTitle level={2} className="mb-6" color="text-dark-text">
       {title.split(' ').map((word, index) => 
-        word === 'Contacto' ? (
+        word === 'Proyecto' || word === 'Cotizar' ? (
           <span key={index} className="text-neon-blue"> {word}</span>
         ) : (
           <span key={index}> {word}</span>
@@ -327,9 +327,52 @@ const Contact = () => {
     >
       <div className="container mx-auto px-4">
         <SectionTitle
-          title="Contacto"
-          subtitle="¿Tienes un proyecto web, móvil o de software en mente? ¡Hablemos! Estoy disponible para nuevas oportunidades y colaboraciones."
+          title="Cotizar Proyecto"
+          subtitle="¿Listo para dar el siguiente paso? Escríbeme y te respondo en menos de 24 horas con una cotización sin compromiso."
         />
+
+        {/* CTAs principales grandes */}
+        <div className="grid md:grid-cols-2 gap-6 mb-12 max-w-4xl mx-auto">
+          <motion.a
+            href="https://wa.me/5491168129155?text=Hola%20Santiago!%20Me%20interesa%20cotizar%20un%20proyecto"
+            target="_blank"
+            rel="noopener noreferrer"
+            variants={CONTACT_ANIMATIONS.contactItem}
+            whileHover={{ scale: 1.02 }}
+            className="block p-8 rounded-2xl bg-gradient-to-br from-green-500/20 to-green-600/10 border border-green-500/30 hover:border-green-500/50 transition-all"
+          >
+            <div className="flex items-center gap-4 mb-4">
+              <div className="p-4 rounded-xl bg-green-500/20">
+                <SiWhatsapp className="text-4xl text-green-500" />
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold text-green-400">WhatsApp</h3>
+                <p className="text-green-400/70">Respuesta inmediata</p>
+              </div>
+            </div>
+            <p className="text-2xl font-bold text-dark-text mb-2">+54 9 11 6812-9155</p>
+            <p className="text-dark-text/70 text-sm">Click para abrir chat directo</p>
+          </motion.a>
+
+          <motion.a
+            href="mailto:excofier.santi@gmail.com?subject=Consulta%20por%20proyecto"
+            variants={CONTACT_ANIMATIONS.contactItem}
+            whileHover={{ scale: 1.02 }}
+            className="block p-8 rounded-2xl bg-gradient-to-br from-blue-500/20 to-blue-600/10 border border-blue-500/30 hover:border-blue-500/50 transition-all"
+          >
+            <div className="flex items-center gap-4 mb-4">
+              <div className="p-4 rounded-xl bg-blue-500/20">
+                <FaEnvelope className="text-4xl text-blue-400" />
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold text-blue-400">Email</h3>
+                <p className="text-blue-400/70">Para consultas detalladas</p>
+              </div>
+            </div>
+            <p className="text-2xl font-bold text-dark-text mb-2">excofier.santi@gmail.com</p>
+            <p className="text-dark-text/70 text-sm">Click para enviar email</p>
+          </motion.a>
+        </div>
 
         {/* Información de disponibilidad */}
         <AvailabilityInfo isVisible={isVisible} />
@@ -404,21 +447,21 @@ const Contact = () => {
               <div className="max-w-2xl mx-auto">
                 <FaRocket className="text-neon-blue text-4xl mb-4 mx-auto" />
                 <CardTitle level={4} className="mb-4" color="text-dark-text">
-                  ¡Construyamos algo increíble juntos!
+                  ¡Transformemos tu Idea en Realidad!
                 </CardTitle>
                 <p className="text-dark-text/70 mb-6">
-                  Cada proyecto es una oportunidad para crear algo único. 
-                  Si tienes una idea, yo tengo las herramientas para hacerla realidad.
+                  No importa si tienes una idea clara o solo una visión general. 
+                  Trabajamos juntos para definir los requisitos y crear la solución perfecta para tu negocio.
                 </p>
                 <div className="flex flex-wrap justify-center gap-4 text-sm">
                   <span className="px-4 py-2 bg-neon-blue/20 text-neon-blue rounded-full">
-                    Respuesta rápida
+                    Cotización en 24hs
                   </span>
                   <span className="px-4 py-2 bg-green-500/20 text-green-400 rounded-full">
-                    Proyectos personalizados
+                    Sin compromiso
                   </span>
                   <span className="px-4 py-2 bg-purple-500/20 text-purple-400 rounded-full">
-                    Colaboración profesional
+                    100% personalizado
                   </span>
                 </div>
               </div>

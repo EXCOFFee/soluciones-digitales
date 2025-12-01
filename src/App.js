@@ -36,7 +36,6 @@ import { personalData } from './constants/personalData';
 const About = lazy(() => import('./components/About'));
 const Skills = lazy(() => import('./components/Skills'));
 const AIProductivity = lazy(() => import('./components/AIProductivity'));
-const Certificates = lazy(() => import('./components/Certificates'));
 const Contact = lazy(() => import('./components/Contact'));
 
 /**
@@ -358,33 +357,37 @@ const App = () => {
           transition={{ duration: 0.8 }}
         >
           <Hero />
-          <LazySection component={About} name="Sobre mí" />
+          <LazySection component={About} name="Servicios" />
           <LazySection component={Skills} name="Tecnologías" />
+          <LazySection component={AIProductivity} name="Metodología" />
           <Portfolio />
-          <LazySection component={AIProductivity} name="IA & Productividad" />
-          <LazySection component={Certificates} name="Certificados" />
-          <LazySection component={Contact} name="Contacto" />
+          <LazySection component={Contact} name="Cotizar Proyecto" />
         </motion.main>
         <footer className="bg-dark-card/50 backdrop-blur-sm border-t border-dark-border py-8">
           <div className="container mx-auto px-4">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <div className="text-center md:text-left mb-4 md:mb-0">
-                <p className="text-dark-text/70">
-                  © {new Date().getFullYear()} Santiago Excofier. Todos los derechos reservados.
+                <p className="text-dark-text font-medium mb-1">
+                  Santiago Excofier - Full Stack Developer
                 </p>
-                <p className="text-dark-text/50 text-sm mt-1">
-                  Desarrollado con React, Tailwind CSS y ❤️
+                <p className="text-dark-text/70 text-sm">
+                  © {new Date().getFullYear()} | Desarrollo Web, Apps Móviles & Software
                 </p>
               </div>
-              <div className="flex gap-4 text-sm text-dark-text/70">
-                <a href="#privacy" className="hover:text-neon-blue transition-colors">
-                  Privacidad
+              <div className="flex flex-col sm:flex-row items-center gap-4">
+                <a 
+                  href="https://wa.me/5491168129155" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-green-400 hover:text-green-300 transition-colors font-medium"
+                >
+                  📱 +54 9 11 6812-9155
                 </a>
-                <a href="#terms" className="hover:text-neon-blue transition-colors">
-                  Términos
-                </a>
-                <a href="#cookies" className="hover:text-neon-blue transition-colors">
-                  Cookies
+                <a 
+                  href="mailto:excofier.santi@gmail.com" 
+                  className="text-blue-400 hover:text-blue-300 transition-colors font-medium"
+                >
+                  ✉️ excofier.santi@gmail.com
                 </a>
               </div>
             </div>

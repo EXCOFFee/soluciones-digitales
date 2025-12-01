@@ -105,10 +105,10 @@ const SOCIAL_ICON_ANIMATIONS = {
  * Configuración centralizada para fácil modificación
  */
 const TYPING_TEXTS = [
-  'Desarrollador Web, Móvil & Software',
-  'Estudiante de Análisis de Sistemas',
-  'Especialista en uso de herramientas de IA & Productividad',
-  'Desarrollo Full-Stack & Multiplataforma'
+  'Santiago Excofier | Full Stack Developer',
+  'Consultor Tecnológico',
+  'Desarrollo Web & Apps Móviles',
+  'Software a Medida para tu Negocio'
 ];
 
 /**
@@ -217,10 +217,11 @@ const FloatingCodeElements = () => {
 const HeroTitle = () => (
   <motion.h1
     variants={HERO_ANIMATIONS.title}
-    className="text-4xl md:text-6xl font-bold text-dark-text mb-4 font-jetbrains"
+    className="text-3xl md:text-5xl lg:text-6xl font-bold text-dark-text mb-4 font-jetbrains leading-tight"
   >
-    Hola, Soy{' '}
-    <span className="text-neon-blue">{personalData.name}</span>
+    <span className="text-neon-blue">DESARROLLO DE SOFTWARE, APPS Y WEBS</span>
+    <br />
+    <span className="text-dark-text">QUE IMPULSAN TU NEGOCIO</span>
   </motion.h1>
 );
 
@@ -233,7 +234,7 @@ const HeroDescription = () => (
     variants={HERO_ANIMATIONS.description}
     className="text-lg text-dark-text/70 mb-8 max-w-2xl mx-auto leading-relaxed"
   >
-    {personalData.bio}
+    Transformo tus ideas en herramientas digitales funcionales. Especialista en crear ecosistemas digitales: <span className="text-neon-blue font-semibold">Webs rápidas</span>, <span className="text-neon-blue font-semibold">Apps móviles intuitivas</span> y <span className="text-neon-blue font-semibold">Software de gestión a medida</span> que optimiza tu facturación y procesos. Sin intermediarios, directo a la solución.
   </motion.p>
 );
 
@@ -247,23 +248,23 @@ const HeroButtons = ({ onAboutClick, onDownloadClick }) => (
     className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
   >
     <PrimaryButton
-      onClick={onAboutClick}
-      leftIcon={<FaArrowDown className="text-sm" />}
+      onClick={onDownloadClick}
+      leftIcon={<span className="text-lg">📩</span>}
       animation="glow"
       size="lg"
-      aria-label="Ver perfil completo"
+      aria-label="Cotizar tu idea"
     >
-      Ver Perfil Completo
+      COTIZAR TU IDEA
     </PrimaryButton>
     
     <OutlinedButton
-      onClick={onDownloadClick}
-      leftIcon={null}
+      onClick={onAboutClick}
+      leftIcon={<FaArrowDown className="text-sm" />}
       animation="scale"
       size="lg"
-      aria-label="Contáctame"
+      aria-label="Ver soluciones"
     >
-      Contáctame
+      Ver Soluciones
     </OutlinedButton>
   </motion.div>
 );

@@ -22,9 +22,9 @@
 export const personalData = {
   // Información básica
   name: 'Santiago Excofier',
-  title: 'Desarrollador Full-Stack & Software',
-  subtitle: 'Especializado en Web, Apps Móviles & Software',
-  bio: 'Graduado en Desarrollo Web y Software en Escuela Da Vinci (finalizado en diciembre 2025) con más de 3 años de experiencia en desarrollo web, aplicaciones móviles y software en general. Apasionado por la inteligencia artificial, desarrollo multiplataforma y productividad.',
+  title: 'Full Stack Developer & Consultor Tecnológico',
+  subtitle: 'Desarrollo Web, Apps Móviles & Software a Medida',
+  bio: 'Transformo ideas en soluciones digitales funcionales. +3 años creando ecosistemas digitales: webs rápidas, apps móviles y software de gestión que optimizan procesos de negocio. Sin intermediarios, directo a la solución.',
   
   // Ubicación y contacto
   location: 'Argentina',

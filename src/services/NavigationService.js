@@ -25,31 +25,31 @@ export const NAVIGATION_CONFIG = {
   },
   ABOUT: {
     id: 'about',
-    name: 'Sobre mí',
+    name: 'Servicios',
     href: '#about',
     order: 2
   },
   SKILLS: {
     id: 'skills',
-    name: 'Habilidades',
+    name: 'Tecnologías',
     href: '#skills',
     order: 3
   },
   AI_PRODUCTIVITY: {
     id: 'ai-productivity',
-    name: 'IA & Productividad',
+    name: 'Metodología',
     href: '#ai-productivity',
     order: 4
   },
-  CERTIFICATES: {
-    id: 'certificates',
-    name: 'Certificados',
-    href: '#certificates',
+  PORTFOLIO: {
+    id: 'portfolio',
+    name: 'Proyectos',
+    href: '#portfolio',
     order: 5
   },
   CONTACT: {
     id: 'contact',
-    name: 'Contacto',
+    name: 'Cotizar Proyecto',
     href: '#contact',
     order: 6
   }
