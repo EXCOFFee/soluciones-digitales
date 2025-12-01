@@ -22,7 +22,7 @@
 import React, { useMemo } from 'react';
 import { motion } from 'framer-motion';
 import { FaRobot, FaCode, FaLightbulb, FaRocket, FaBrain, FaSearch, FaEdit, FaChartLine } from 'react-icons/fa';
-import { SiOpenai, SiGithub, SiVisualstudiocode, SiNotion } from 'react-icons/si';
+import { SiGithub, SiVisualstudiocode, SiNotion } from 'react-icons/si';
 import { GiArtificialIntelligence } from 'react-icons/gi';
 import { MdAutoAwesome, MdSmartToy } from 'react-icons/md';
 import PropTypes from 'prop-types';
@@ -111,14 +111,14 @@ const AI_TOOLS = {
     bgColor: 'from-purple-500/10 to-purple-600/5',
     tools: [
       {
-        name: 'ChatGPT',
-        icon: SiOpenai,
-        description: 'Asistente de IA para resolución de problemas, documentación y brainstorming',
+        name: 'Gemini Pro',
+        icon: GiArtificialIntelligence,
+        description: 'IA de Google para análisis avanzado, generación de código y resolución de problemas',
         usage: 'Diario',
         experience: '1.5 años',
-        productivity: 85,
-        features: ['Debugging', 'Documentación', 'Brainstorming', 'Explicaciones técnicas'],
-        color: '#00A67E'
+        productivity: 88,
+        features: ['Análisis de código', 'Documentación', 'Brainstorming', 'Multimodal'],
+        color: '#4285F4'
       },
       {
         name: 'Claude',
@@ -265,7 +265,7 @@ const USE_CASES = [
       'Análisis de requisitos con Claude',
       'Generación de código base con Copilot',
       'Optimización con Cursor',
-      'Documentación con ChatGPT'
+      'Documentación con Gemini Pro'
     ],
     icon: FaRocket,
     color: 'text-blue-400'

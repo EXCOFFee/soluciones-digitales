@@ -24,7 +24,7 @@ export const personalData = {
   name: 'Santiago Excofier',
   title: 'Full Stack Developer & Consultor Tecnológico',
   subtitle: 'Desarrollo Web, Apps Móviles & Software a Medida',
-  bio: 'Transformo ideas en soluciones digitales funcionales. +3 años creando ecosistemas digitales: webs rápidas, apps móviles y software de gestión que optimizan procesos de negocio. Sin intermediarios, directo a la solución.',
+  bio: 'Transformo ideas en soluciones digitales funcionales. +5 años creando ecosistemas digitales: webs rápidas, apps móviles y software de gestión que optimizan procesos de negocio. Sin intermediarios, directo a la solución.',
   
   // Ubicación y contacto
   location: 'Argentina',
@@ -36,7 +36,7 @@ export const personalData = {
   expectedGraduation: 'Inicios de 2026',
   
   // Experiencia profesional
-  experienceYears: '3',
+  experienceYears: '5',
   freelanceStartYear: '2022',
   workStatus: 'Freelance',
   availability: 'Disponible para proyectos',
