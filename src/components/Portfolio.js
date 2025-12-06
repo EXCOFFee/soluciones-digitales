@@ -5,6 +5,27 @@ import Card, { CardHeader, CardTitle, CardContent } from './UI/Card';
 
 const PROJECTS = [
   {
+    name: 'EXCOFF CRM',
+    url: 'https://github.com/EXCOFFee/EXCOFER_CRM',
+    description: 'Sistema CRM multiplataforma (PC y Mobile) que automatiza la entrada de datos y ofrece visualización en tiempo real mediante WebSockets.',
+    tags: ['CRM', 'WebSockets', 'Tiempo Real', 'Multiplataforma'],
+    isGitHub: true,
+  },
+  {
+    name: 'ERP EXCOFF',
+    url: 'https://github.com/EXCOFFee/ERP_EXCOFF',
+    description: 'Sistema ERP Universal multiplataforma para gestionar inventario, ventas, recursos humanos y finanzas de una organización.',
+    tags: ['ERP', 'Gestión Empresarial', 'RRHH', 'Finanzas'],
+    isGitHub: true,
+  },
+  {
+    name: 'Inventory EXCOFFee',
+    url: 'https://github.com/EXCOFFee/Inventory-EXCOFFee',
+    description: 'Sistema gestor de inventarios multiplataforma (PC y Mobile) para control de stock, movimientos y reportes en tiempo real.',
+    tags: ['Inventario', 'Gestión de Stock', 'Reportes', 'Multiplataforma'],
+    isGitHub: true,
+  },
+  {
     name: 'Wunder Coaching',
     url: 'https://wundercoaching.com.ar',
     description: 'Landing page profesional con diseño moderno y optimizada para conversión de clientes.',
