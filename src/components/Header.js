@@ -119,9 +119,8 @@ const HeaderLogo = ({ onClick, className = '' }) => (
     <img 
       src={`${process.env.PUBLIC_URL}/logo.png`} 
       alt="EXCOFFee Logo" 
-      className="w-8 h-8 object-contain"
+      className="w-10 h-10 object-contain"
     />
-    <span>EXCOFFee</span>
   </motion.button>
 );
 
@@ -217,34 +216,44 @@ MobileMenuButton.propTypes = {
  * Componente para la navegación móvil
  * Separado para mejor organización
  */
-const MobileNavigation = ({ items, activeSection, isOpen, onItemClick }) => (
-  <AnimatePresence>
-    {isOpen && (
-      <motion.div
-        id="mobile-menu"
-        initial="hidden"
-        animate="visible"
-        exit="exit"
-        variants={MOBILE_MENU_ANIMATIONS}
-        className="md:hidden overflow-hidden border-t border-dark-border"
-        role="menu"
-        aria-orientation="vertical"
-      >
-        <ul className="py-4 space-y-2 bg-dark-bg/95 backdrop-blur-md">
-          {items.map((item, index) => (
-            <motion.li
-              key={item.id}
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ 
-                opacity: 1, 
-                x: 0,
-                transition: { delay: index * 0.1, duration: 0.3 }
-              }}
-              role="none"
-            >
-              <button
-                onClick={() => onItemClick(item.href)}
-                className={`
+const MobileNavigation = ({ items, activeSection, isOpen, onItemClick, onClose }) => {
+  const handleItemClick = (href) => {
+    // Cerrar menú primero
+    onClose();
+    // Usar setTimeout para permitir que el menú se cierre antes de navegar
+    setTimeout(() => {
+      onItemClick(href);
+    }, 100);
+  };
+
+  return (
+    <AnimatePresence>
+      {isOpen && (
+        <motion.div
+          id="mobile-menu"
+          initial="hidden"
+          animate="visible"
+          exit="exit"
+          variants={MOBILE_MENU_ANIMATIONS}
+          className="md:hidden overflow-hidden border-t border-dark-border"
+          role="menu"
+          aria-orientation="vertical"
+        >
+          <ul className="py-4 space-y-2 bg-dark-bg/95 backdrop-blur-md">
+            {items.map((item, index) => (
+              <motion.li
+                key={item.id}
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ 
+                  opacity: 1, 
+                  x: 0,
+                  transition: { delay: index * 0.1, duration: 0.3 }
+                }}
+                role="none"
+              >
+                <button
+                  onClick={() => handleItemClick(item.href)}
+                  className={`
                   block w-full text-left py-3 px-6 font-jetbrains font-medium
                   transition-all duration-300 rounded-lg mx-2
                   focus:outline-none focus:ring-2 focus:ring-neon-blue/50 
@@ -274,13 +283,15 @@ const MobileNavigation = ({ items, activeSection, isOpen, onItemClick }) => (
       </motion.div>
     )}
   </AnimatePresence>
-);
+  );
+};
 
 MobileNavigation.propTypes = {
   items: PropTypes.array.isRequired,
   activeSection: PropTypes.string,
   isOpen: PropTypes.bool.isRequired,
-  onItemClick: PropTypes.func.isRequired
+  onItemClick: PropTypes.func.isRequired,
+  onClose: PropTypes.func.isRequired
 };
 
 /**
@@ -416,6 +427,7 @@ const Header = () => {
           activeSection={activeSection}
           isOpen={isMobileMenuOpen}
           onItemClick={handleNavigation}
+          onClose={() => setIsMobileMenuOpen(false)}
         />
       </nav>
     </motion.header>
