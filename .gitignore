@@ -43,9 +43,4 @@ Desktop.ini
 deploy.bat
 deploy.sh
 deploy-github.bat
-deploy-github.sh
-
-# Screenshots and documentation images
-*.png
-*.jpg
-*.jpeg 
+deploy-github.sh 
