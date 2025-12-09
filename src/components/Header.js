@@ -119,7 +119,7 @@ const HeaderLogo = ({ onClick, className = '' }) => (
     <img 
       src={`${process.env.PUBLIC_URL}/logo.png`} 
       alt="EXCOFFee Logo" 
-      className="w-10 h-10 object-contain"
+      className="w-12 h-12 md:w-14 md:h-14 object-contain"
     />
   </motion.button>
 );
