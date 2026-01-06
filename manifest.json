@@ -1,0 +1,20 @@
+{
+  "short_name": "EXCOFFee",
+  "name": "EXCOFFee Soluciones - Desarrollo Web, Apps y Software",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "logo.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#00d4ff",
+  "background_color": "#0a0a0a"
+} 
