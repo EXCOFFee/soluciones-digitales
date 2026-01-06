@@ -5,6 +5,14 @@ import Card, { CardHeader, CardTitle, CardContent } from './UI/Card';
 
 const PROJECTS = [
   {
+    name: 'EXCOFF E7 HUB 🚀',
+    url: 'https://excoffe7.com',
+    githubUrl: 'https://github.com/EXCOFFee/EXCOFF-E7-Builder-and-Guides',
+    description: 'Plataforma web Full Stack para Epic Seven con base de datos de 364 héroes, sistema de builds comunitario, buscador de gremios y centro de guías. SSR con Next.js 16 para SEO optimizado.',
+    tags: ['Next.js 16', 'React 19', 'TypeScript', 'Laravel 11', 'MySQL', 'TanStack Query', 'i18n (6 idiomas)'],
+    isGitHub: false,
+  },
+  {
     name: 'EXCOFF CRM',
     url: 'https://github.com/EXCOFFee/EXCOFER_CRM',
     description: 'Sistema CRM multiplataforma (PC y Mobile) que automatiza la entrada de datos y ofrece visualización en tiempo real mediante WebSockets.',
@@ -89,15 +97,28 @@ const Portfolio = () => (
                 <span className="font-bold text-xl text-neon-blue">
                   {project.name}
                 </span>
-                <a 
-                  href={project.url} 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  aria-label={`Ver ${project.name}`} 
-                  className="p-2 rounded-lg bg-neon-blue/10 text-neon-blue hover:bg-neon-blue/20 transition-colors"
-                >
-                  {project.isGitHub ? <FaGithub className="text-lg" /> : <FaExternalLinkAlt className="text-lg" />}
-                </a>
+                <div className="flex gap-2">
+                  <a 
+                    href={project.url} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    aria-label={`Ver ${project.name}`} 
+                    className="p-2 rounded-lg bg-neon-blue/10 text-neon-blue hover:bg-neon-blue/20 transition-colors"
+                  >
+                    {project.isGitHub ? <FaGithub className="text-lg" /> : <FaExternalLinkAlt className="text-lg" />}
+                  </a>
+                  {project.githubUrl && (
+                    <a 
+                      href={project.githubUrl} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      aria-label={`Ver código de ${project.name}`} 
+                      className="p-2 rounded-lg bg-neon-blue/10 text-neon-blue hover:bg-neon-blue/20 transition-colors"
+                    >
+                      <FaGithub className="text-lg" />
+                    </a>
+                  )}
+                </div>
               </div>
               <p className="text-dark-text/70 text-sm mb-4 flex-grow">{project.description}</p>
               <div className="flex flex-wrap gap-2">
