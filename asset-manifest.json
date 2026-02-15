@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/excoffee-soluciones/static/css/main.3431f8fd.css",
-    "main.js": "/excoffee-soluciones/static/js/main.b9f0b3eb.js",
+    "main.css": "/excoffee-soluciones/static/css/main.7e6ca4b9.css",
+    "main.js": "/excoffee-soluciones/static/js/main.64cc440e.js",
     "static/js/145.b6e81e79.chunk.js": "/excoffee-soluciones/static/js/145.b6e81e79.chunk.js",
     "static/js/964.23a79f7d.chunk.js": "/excoffee-soluciones/static/js/964.23a79f7d.chunk.js",
     "static/js/732.b401d22e.chunk.js": "/excoffee-soluciones/static/js/732.b401d22e.chunk.js",
@@ -9,8 +9,8 @@
     "static/js/669.74f3be82.chunk.js": "/excoffee-soluciones/static/js/669.74f3be82.chunk.js",
     "static/js/652.648b0436.chunk.js": "/excoffee-soluciones/static/js/652.648b0436.chunk.js",
     "index.html": "/excoffee-soluciones/index.html",
-    "main.3431f8fd.css.map": "/excoffee-soluciones/static/css/main.3431f8fd.css.map",
-    "main.b9f0b3eb.js.map": "/excoffee-soluciones/static/js/main.b9f0b3eb.js.map",
+    "main.7e6ca4b9.css.map": "/excoffee-soluciones/static/css/main.7e6ca4b9.css.map",
+    "main.64cc440e.js.map": "/excoffee-soluciones/static/js/main.64cc440e.js.map",
     "145.b6e81e79.chunk.js.map": "/excoffee-soluciones/static/js/145.b6e81e79.chunk.js.map",
     "964.23a79f7d.chunk.js.map": "/excoffee-soluciones/static/js/964.23a79f7d.chunk.js.map",
     "732.b401d22e.chunk.js.map": "/excoffee-soluciones/static/js/732.b401d22e.chunk.js.map",
@@ -19,7 +19,7 @@
     "652.648b0436.chunk.js.map": "/excoffee-soluciones/static/js/652.648b0436.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3431f8fd.css",
-    "static/js/main.b9f0b3eb.js"
+    "static/css/main.7e6ca4b9.css",
+    "static/js/main.64cc440e.js"
   ]
 }
